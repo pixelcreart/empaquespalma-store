@@ -12,12 +12,28 @@ use yii\bootstrap5\NavBar;
 
 AppAsset::register($this);
 
+$params = Yii::$app->params;
+
 $this->registerCsrfMetaTags();
 $this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
 $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no']);
-$this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta_description'] ?? '']);
-$this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
+$this->registerMetaTag(['name' => 'description', 'content' => $params['seo']['description'] ?? '']);
+$this->registerMetaTag(['name' => 'keywords', 'content' => $params['seo']['keyword'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
+
+$this->registerMetaTag(['name' => 'author', 'content' => $params['seo']['author'] ?? 'La Burrita Loca']);
+$this->registerMetaTag(['name' => 'robots', 'content' => $params['seo']['robots'] ?? 'index, follow']);
+
+$this->registerMetaTag(['property' => 'og:title', 'content' => $params['seo']['opengraph']['title'] ?? $this->title]);
+$this->registerMetaTag(['property' => 'og:description', 'content' => $params['seo']['opengraph']['description'] ?? $params['seo']['description']]);
+$this->registerMetaTag(['property' => 'og:image', 'content' => $params['seo']['opengraph']['image'] ?? '']);
+$this->registerMetaTag(['property' => 'og:url', 'content' => $params['seo']['opengraph']['url'] ?? Yii::$app->request->absoluteUrl]);
+$this->registerMetaTag(['property' => 'og:type', 'content' => $params['seo']['opengraph']['type'] ?? 'website']);
+
+$this->registerMetaTag(['name' => 'twitter:card', 'content' => $params['seo']['twitter']['card'] ?? 'summary_large_image']);
+$this->registerMetaTag(['name' => 'twitter:title', 'content' => $params['seo']['twitter']['title'] ?? $this->title]);
+$this->registerMetaTag(['name' => 'twitter:description', 'content' => $params['seo']['twitter']['description'] ?? $params['seo']['description']]);
+$this->registerMetaTag(['name' => 'twitter:image', 'content' => $params['seo']['twitter']['image'] ?? '']);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -28,55 +44,16 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
-
-<header id="header">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
-                : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
-                    . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
-                    )
-                    . Html::endForm()
-                    . '</li>'
-        ]
-    ]);
-    NavBar::end();
-    ?>
-</header>
-
-<main id="main" class="flex-shrink-0" role="main">
-    <div class="container">
-        <?php if (!empty($this->params['breadcrumbs'])): ?>
-            <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-        <?php endif ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+<div id="layoutDefault">
+    <div id="layoutDefault_content">
+        <main>
+            <?=$this->render('_navbar')?>
+            <?=$this->render('_topbar') ?>
+            <?=$content?>
+        </main>
     </div>
-</main>
-
-<footer id="footer" class="mt-auto py-3 bg-light">
-    <div class="container">
-        <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-            <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
-        </div>
-    </div>
-</footer>
-
+    <?= $this->render('_footer') ?>
+</div>
 <?php $this->endBody() ?>
 </body>
 </html>

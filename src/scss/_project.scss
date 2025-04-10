@@ -5,3 +5,33 @@
 // This file is intentionally blank
 // Use this file to override SCSS within the project, or to add new SCSS
 // for creating your own CSS components
+
+.navbar-brand-img {
+    height: 2.5rem !important;
+}
+
+.page-header-ui {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.topbar {
+    padding: 0.75rem 1.25rem;
+
+    background-color: $white;
+}
+
+.bg-terciary {
+    background-color: $terciary !important;
+}
+
+.text-terciary {
+    color: $terciary !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "all-round-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
