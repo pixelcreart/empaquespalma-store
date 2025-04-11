@@ -1,5 +1,5 @@
-<section id="features" class="bg-white py-5">
-    <div class="container">
+<section id="features" class="bg-white">
+    <div class="container py-5">
         <div class="row mt-n10">
             <div class="col-md-4">
                 <div class="card bg-terciary mb-4 h-100">

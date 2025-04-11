@@ -1,23 +1,41 @@
-<section class="bg-white py-5">
+<section class="bg-white py-10">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Testimonials</h2>
-                <p>What our clients say about us.</p>
+        <div class="row mb-4">
+            <div class="col-md-12 text-center">
+                <h2 class="display-6">Testimonials</h2>
+                <p class="lead">What our clients say about us.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <h3>Client 1</h3>
-                <p>"The service was excellent and the team was very professional."</p>
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>"The service was excellent and the team was very professional."</p>    
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Laura <cite title="Source Title">MILAU</cite>
+                    </figcaption>
+                </figure>
             </div>
             <div class="col-md-4">
-                <h3>Client 2</h3>
-                <p>"I am very satisfied with the results and would recommend them to anyone."</p>
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>"I had a great experience with this company. Highly recommend!"</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        John <cite title="Source Title">Doe</cite>
+                    </figcaption>
+                </figure>
             </div>
             <div class="col-md-4">
-                <h3>Client 3</h3>
-                <p>"A fantastic experience from start to finish. Highly recommended!"</p>
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>"The team was very helpful and the product exceeded my expectations."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Jane <cite title="Source Title">Smith</cite>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>

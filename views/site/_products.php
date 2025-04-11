@@ -3,7 +3,7 @@
 use app\widgets\products\ProductItem;
 ?>
 <section id="products" class="bg-terciary">
-    <div class="container py-5">
+    <div class="container py-10">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-6 text-center">Productos</h1>

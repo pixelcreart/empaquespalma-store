@@ -13,3 +13,5 @@ $this->title = 'Empaques Palma - Empaques de lujo para joyerías';
 <?=$this->render('_testimonials') ?>
 
 <?=$this->render('_about') ?>
+
+<?=$this->render('_contact') ?>

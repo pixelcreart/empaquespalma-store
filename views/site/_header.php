@@ -9,10 +9,16 @@ use yii\helpers\Html;
                 <div class="col-lg-6" data-aos="fade-up">
                     <h1 class="page-header-ui-title">Empaques que realzan tu marca</h1>
                     <p class="page-header-ui-text mb-5">Bolsas de terciopelo premium para joyerías y regalos especiales</p>
-                    <a class="btn btn-secondary fw-500 me-2" href="#!">
-                        Nuestro Catalogo
-                    </a>
-                    <a class="btn btn-link fw-500" href="#!">Contactenos</a>
+                    <?=Html::a('Nuestro Catalogo', '#products', [
+                        'class' => 'btn btn-secondary fw-500 me-2',
+                    ])?>
+                    <?=Html::a('Contactenos', '#contact', [
+                        'class' => 'btn btn-link fw-500',
+                        'data' => [
+                            'bs-toggle' => 'modal',
+                            'bs-target' => '#contactModal',
+                        ],
+                    ])?>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100">
                     <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/hero-velvet-bag-1.png', [
