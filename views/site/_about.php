@@ -6,7 +6,7 @@ use yii\helpers\Html;
         <div class="row mb-5">
             <div class="col-md-12 text-center">
                 <h2 class="display-6">Sobre Nosotros</h2>
-                <p class="lead">En Empaques Palma creemos que los pequeños detalles hacen grandes diferencias. Nacimos con el propósito de transformar la forma en que las joyerías y marcas presentan sus productos, creando empaques que transmiten elegancia, cuidado y valor desde el primer vistazo.</p>
+                <p class="lead">En <strong>Empaques Palma</strong> creemos que los pequeños detalles hacen grandes diferencias. <strong>Somos una tienda 100% en línea</strong> especializada en empaques para joyería, donde combinamos diseño, calidad y practicidad para resaltar el valor de cada producto que tu marca ofrece.</p>
             </div>
         </div>
         <div class="row">
@@ -19,17 +19,16 @@ use yii\helpers\Html;
                 <div class="row">
                     <div class="col-12 mb-4">
                         <h3 class="fs-1">Historia</h3>
-                        <p><strong>Empaques Palma</strong> nació durante la pandemia en San Pedro Sula, Honduras, bajo el nombre original de PaperBags. En sus inicios, el emprendimiento tenía como objetivo ofrecer bolsas de papel personalizadas, atendiendo una necesidad puntual del mercado.</p>
-                        <p>Sin embargo, como muchos emprendimientos que evolucionan con el tiempo, el negocio dio un giro hacia el sector de empaques para joyería, encontrando una oportunidad clara en este rubro. Así, surgió Empaques Palma, con la visión de brindar soluciones de empaque elegantes, prácticas y accesibles para joyeros y emprendedores.</p>
-                        <p>Impulsada por su fundadora, Maciel Palma, la empresa ha pasado de ser una pequeña iniciativa a convertirse en un negocio de distribución y elaboración de bolsas para joyería. Hoy, Empaques Palma representa una fuente de empleo y oportunidad para hondureños, destacándose por ofrecer productos con un balance inigualable entre calidad y precio.</p>
+                        <p>Nacimos en plena pandemia en San Pedro Sula, Honduras, bajo el nombre original de PaperBags, con la idea de ofrecer bolsas de papel personalizadas. Con el tiempo, encontramos nuestro verdadero propósito en el mundo de la joyería: crear empaques elegantes y funcionales que eleven la presentación de cada pieza.</p>
+                        <p>Impulsada por su fundadora, Maciel Palma, la marca evolucionó hasta convertirse en lo que hoy es Empaques Palma: una tienda digital que distribuye y elabora bolsas de terciopelo para joyería, brindando oportunidades y productos de alta calidad a todo el país.</p>
                     </div>
                     <div class="col-md-6 mb-4">
                         <h3 class="fs-1">Misión</h3>
-                        <p>Ofrecer soluciones de empaque especializadas para el sector joyero, combinando diseño, funcionalidad y calidad, con productos que reflejen elegancia y cuidado en cada detalle. Buscamos empoderar a emprendedores y negocios con empaques que eleven la presentación de sus marcas.</p>
+                        <p>Ofrecer soluciones de empaque para joyerías y marcas que buscan destacar, combinando diseño, funcionalidad y calidad desde una plataforma 100% digital.</p>
                     </div>
                     <div class="col-md-6 mb-4">
                         <h3 class="fs-1">Visión</h3>
-                        <p>Ser la marca líder en empaques para joyería en Honduras y Centroamérica, reconocida por su innovación, compromiso con la calidad y aporte al crecimiento del emprendimiento local. Queremos que cada producto entregado hable de orgullo, pasión y excelencia artesanal.</p>
+                        <p>Ser la marca líder en empaques para joyería en Honduras y la región, siendo reconocida por su innovación, accesibilidad y compromiso con el crecimiento de los emprendedores.</p>
                     </div>
                     <div class="col-md-12 mb-4">
                         <h3 class="fs-1">Valores</h3>

@@ -1,9 +1,23 @@
+<?php
+
+use yii\helpers\Html;
+?>
 <section id="contact" class="bg-white">
     <div class="container py-10">
         <div class="row">
             <div class="col-12">
                 <h1 class="display-6 text-center">Contáctanos</h1>
                 <p class="lead"></p>
+            </div>
+            <div class="col-md-6 text-center">
+                <p class="lead">¿Tenés dudas, pedidos personalizados o querés cotizar al por mayor?</p>
+                <p>Estamos aquí para ayudarte.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <div>
+                    <div>WhatsApp:</div>
+                    <div><?=Html::a('Escribenos', '')?></div>
+                </div>
             </div>
         </div>
     </div>
