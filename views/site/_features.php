@@ -1,24 +1,24 @@
 <section id="features" class="bg-white">
     <div class="container py-5">
-        <div class="row mt-n10">
-            <div class="col-md-4">
-                <div class="card bg-terciary mb-4 h-100">
+        <div class="row mt-md-n10">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-terciary h-100">
                     <div class="card-body">
                         <h1>Personalización Disponible</h1>
                         <p class="m-0">Estampado de logos en dorado y plateado</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card bg-terciary mb-4 h-100">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-terciary h-100">
                     <div class="card-body">
                         <h1>Envíos a toda Honduras</h1>
                         <p class="m-0">Tiempo promedio de entrega: 24-48h</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card bg-terciary mb-4 h-100">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-terciary h-100">
                     <div class="card-body">
                         <h1>Ventas Mayoristas</h1>
                         <p class="m-0">Descuentos por volumen de compra</p>

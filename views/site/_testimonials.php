@@ -1,39 +1,52 @@
+<?php
+
+use yii\helpers\Html;
+?>
 <section class="bg-white py-10">
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-12 text-center">
-                <h2 class="display-6">Testimonials</h2>
-                <p class="lead">What our clients say about us.</p>
+                <h2 class="display-6">Lo que dicen nuestros clientes</h2>
+                <p class="lead">En Empaques Palma, cada bolsa cuenta una historia. La confianza de nuestros clientes es nuestro mayor orgullo. Conoce lo que emprendedores, joyeros y marcas han vivido al trabajar con nosotros.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <figure>
-                    <blockquote class="blockquote">
-                        <p>"The service was excellent and the team was very professional."</p>    
+                    <blockquote class="blockquote mb-4">
+                        <p>"Muy buena experiencia siempre cumplen con nuestras espectativas, excelente atención y amamos nuestras bolsitas extras en diferentes tonalidades"</p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        Laura <cite title="Source Title">MILAU</cite>
+                        Andrea Rodriguez <cite title="Source Title"><?=Html::a('AM Beauties', 'https://www.instagram.com/am_beautieshn', [
+                            'target' => '_blank',
+                            'rel' => 'noopener noreferrer',
+                        ])?></cite>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <blockquote class="blockquote mb-4">
+                        <p>"Tengo varios años trabajando con maciel, desde sus inicios con la marca. Me hace sentir muy orgullosa de apoyar una mujer que ha crecido mucho con su marca. Nunca he tenido problemas que no se han podido resolver y siempre brindan una excelente atención."</p>    
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Nahomi Bustillo <cite title="Source Title"><?=Html::a('@Femblematic', 'https://www.instagram.com/femblematic_hn', [
+                            'target' => '_blank',
+                            'rel' => 'noopener noreferrer',
+                        ])?></cite>
                     </figcaption>
                 </figure>
             </div>
             <div class="col-md-4">
                 <figure>
                     <blockquote class="blockquote">
-                        <p>"I had a great experience with this company. Highly recommend!"</p>
+                        <p>"Las bolsitas mas lindas con variedad de colores lindos!"</p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        John <cite title="Source Title">Doe</cite>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-md-4">
-                <figure>
-                    <blockquote class="blockquote">
-                        <p>"The team was very helpful and the product exceeded my expectations."</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Jane <cite title="Source Title">Smith</cite>
+                        Gabriela Paredes <cite title="Source Title"><?=Html::a('Gioielli', 'https://www.instagram.com/gioielli.hn', [
+                            'target' => '_blank',
+                            'rel' => 'noopener noreferrer',
+                        ])?></cite>
                     </figcaption>
                 </figure>
             </div>

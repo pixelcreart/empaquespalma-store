@@ -3,10 +3,10 @@ use yii\helpers\Html;
 ?>
 <section id="about" class="bg-terciary py-10">
     <div class="container">
-        <div class="row mb-4">
+        <div class="row mb-5">
             <div class="col-md-12 text-center">
-                <h2 class="display-6">About Us</h2>
-                <p class="lead">We are a company dedicated to providing the best services to our clients.</p>
+                <h2 class="display-6">Sobre Nosotros</h2>
+                <p class="lead">En Empaques Palma creemos que los pequeños detalles hacen grandes diferencias. Nacimos con el propósito de transformar la forma en que las joyerías y marcas presentan sus productos, creando empaques que transmiten elegancia, cuidado y valor desde el primer vistazo.</p>
             </div>
         </div>
         <div class="row">

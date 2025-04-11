@@ -6,12 +6,12 @@ use app\widgets\products\ProductItem;
     <div class="container py-10">
         <div class="row">
             <div class="col-12">
-                <h1 class="display-6 text-center">Productos</h1>
-                <p class="lead"></p>
+                <h1 class="display-6 text-center">Nuestros Productos</h1>
+                <p class="lead">Diseñamos empaques pensados para resaltar la belleza de lo que llevás dentro. Especializados en bolsas de terciopelo para joyería, cada uno de nuestros productos combina calidad, presentación y practicidad, adaptándose a las necesidades de tu marca.</p>
             </div>
         </div>
         <div class="row py-5">
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
                         'name' => 'Bolsa Tercipelo',
@@ -21,7 +21,7 @@ use app\widgets\products\ProductItem;
                     ],
                 ])?>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
                         'name' => 'Bolsa Tercipelo',
@@ -31,7 +31,7 @@ use app\widgets\products\ProductItem;
                     ],
                 ])?>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
                         'name' => 'Bolsa Tercipelo',
@@ -41,7 +41,7 @@ use app\widgets\products\ProductItem;
                     ],
                 ])?>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
                         'name' => 'Bolsa Tercipelo',
@@ -51,7 +51,7 @@ use app\widgets\products\ProductItem;
                     ],
                 ])?>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
                         'name' => 'Bolsa Tercipelo',
@@ -61,7 +61,7 @@ use app\widgets\products\ProductItem;
                     ],
                 ])?>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
                         'name' => 'Bolsa Tercipelo',
