@@ -6,12 +6,13 @@ use yii\helpers\Html;
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-12 text-center">
+                <div class="display-6 mb-4"><i class="fi fi-ts-comment-dots"></i></div>
                 <h2 class="display-6">Lo que dicen nuestros clientes</h2>
                 <p class="lead">En Empaques Palma, cada bolsa cuenta una historia. La confianza de nuestros clientes es nuestro mayor orgullo. Conoce lo que emprendedores, joyeros y marcas han vivido al trabajar con nosotros.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <figure>
                     <blockquote class="blockquote mb-4">
                         <p>"Muy buena experiencia siempre cumplen con nuestras espectativas, excelente atención y amamos nuestras bolsitas extras en diferentes tonalidades"</p>
@@ -24,7 +25,7 @@ use yii\helpers\Html;
                     </figcaption>
                 </figure>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <figure>
                     <blockquote class="blockquote mb-4">
                         <p>"Tengo varios años trabajando con maciel, desde sus inicios con la marca. Me hace sentir muy orgullosa de apoyar una mujer que ha crecido mucho con su marca. Nunca he tenido problemas que no se han podido resolver y siempre brindan una excelente atención."</p>    
@@ -37,7 +38,7 @@ use yii\helpers\Html;
                     </figcaption>
                 </figure>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <figure>
                     <blockquote class="blockquote">
                         <p>"Las bolsitas mas lindas con variedad de colores lindos!"</p>

@@ -21,7 +21,7 @@ use yii\helpers\Html;
                     ])?>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100">
-                    <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/hero-velvet-bag-1.png', [
+                    <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/hero-1.png', [
                         'class' => 'img-fluid',
                     ])?>
                 </div>

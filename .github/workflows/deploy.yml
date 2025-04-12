@@ -1,0 +1,70 @@
+name: Deploy on Tag
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TEST_REMOTE_PATH: /var/www/empaquespalma
+      PROD_REMOTE_PATH: /var/www/empaquespalma
+      VERSION: ${{ github.ref }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Tag Name
+        run: echo "VERSION=$(echo ${{ env.VERSION }} | sed 's|refs/tags/||')" >> $GITHUB_ENV
+
+      - name: Deploy to Test Server (${{secrets.TEST_SERVER}})
+        if: startsWith(github.ref, 'refs/tags/') && contains(github.ref, 'rc')
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.TEST_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          cd ~/.ssh
+          chmod 600 id_rsa
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.TEST_SSH_USERNAME }}@${{ secrets.TEST_SERVER }} 'echo "${{secrets.REPO_DEPLOY_KEY}}" > ~/.ssh/gh_key &&
+          sudo -i &&
+          whoami &&
+          chmod 600 ~/.ssh/gh_key &&
+          eval `ssh-agent -s` &&
+          ssh-add ~/.ssh/gh_key &&
+          cd ${{ env.TEST_REMOTE_PATH }} &&
+          git fetch --tags &&
+          git checkout ${{ github.ref }} &&
+          echo ${{ env.VERSION }} > VERSION &&
+          /usr/bin/docker compose build &&
+          /usr/bin/docker compose up -d &&
+          /usr/bin/docker compose restart &&
+          sleep 10 &&
+          /usr/bin/docker compose run --rm php php yii cache/flush-all &&
+          rm -rf web/assets/* &&
+          rm -f ~/.ssh/gh_key &&
+          /usr/bin/docker compose run --rm php composer install'
+
+      - name: Deploy Production Server (${{secrets.PROD_SERVER}})
+        if: startsWith(github.ref, 'refs/tags/') && contains(github.ref, 'v') && !(contains(github.ref, '-'))
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PROD_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          cd ~/.ssh
+          chmod 600 id_rsa
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.PROD_SSH_USERNAME }}@${{ secrets.PROD_SERVER }} 'echo "${{secrets.REPO_DEPLOY_KEY}}" > ~/.ssh/gh_key &&
+          chmod 600 ~/.ssh/gh_key &&
+          eval `ssh-agent -s` &&
+          ssh-add ~/.ssh/gh_key &&
+          cd ${{ env.PROD_REMOTE_PATH }} &&
+          git fetch --tags && git checkout ${{ github.ref }} &&
+          echo ${{ env.VERSION }} > VERSION &&
+          /usr/bin/docker compose build &&
+          /usr/bin/docker compose up -d &&
+          /usr/bin/docker compose restart &&
+          sleep 10 &&
+          /usr/bin/docker compose run --rm php php yii cache/flush-all &&
+          rm -rf web/assets/* &&
+          rm -f ~/.ssh/gh_key &&
+          /usr/bin/docker compose run --rm php composer install'

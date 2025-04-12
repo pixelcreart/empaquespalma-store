@@ -20,7 +20,10 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        'https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css',
+        'https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css',
         'https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css',
+        'https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css',
         'https://unpkg.com/aos@2.3.1/dist/aos.css',
         'css/styles.min.css',
     ];

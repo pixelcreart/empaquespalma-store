@@ -5,17 +5,18 @@ use yii\helpers\Html;
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-12 text-center">
+                <div class="display-6 text-center mb-4"><i class="fi fi-tr-hands-together"></i></div>
                 <h2 class="display-6">Sobre Nosotros</h2>
                 <p class="lead">En <strong>Empaques Palma</strong> creemos que los pequeños detalles hacen grandes diferencias. <strong>Somos una tienda 100% en línea</strong> especializada en empaques para joyería, donde combinamos diseño, calidad y practicidad para resaltar el valor de cada producto que tu marca ofrece.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/about.jpg', [
                     'class' => 'img-fluid rounded',
                 ])?>
             </div>
-            <div class="col-md-8 ps-md-5">
+            <div class="col-md-8 mb-4 ps-md-5">
                 <div class="row">
                     <div class="col-12 mb-4">
                         <h3 class="fs-1">Historia</h3>

@@ -3,7 +3,8 @@
         <div class="row mt-md-n10">
             <div class="col-md-4 mb-4">
                 <div class="card bg-terciary h-100">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                        <div class="display-6 mb-2 text-secondary"><i class="fi fi-ts-handmade"></i></div>
                         <h1>Personalización Disponible</h1>
                         <p class="m-0">Estampado de logos en dorado y plateado</p>
                     </div>
@@ -11,7 +12,8 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card bg-terciary h-100">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                        <div class="display-6 mb-2 text-secondary"><i class="fi fi-tr-shipping-fast"></i></div>
                         <h1>Envíos a toda Honduras</h1>
                         <p class="m-0">Tiempo promedio de entrega: 24-48h</p>
                     </div>
@@ -19,7 +21,8 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card bg-terciary h-100">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                        <div class="display-6 mb-2 text-secondary"><i class="fi fi-tr-boxes"></i></div>
                         <h1>Ventas Mayoristas</h1>
                         <p class="m-0">Descuentos por volumen de compra</p>
                     </div>
