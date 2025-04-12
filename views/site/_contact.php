@@ -24,10 +24,7 @@ use yii\helpers\Html;
                 <h5 class="mb-4">Contáctenos</h5>
                 <div>
                     <div class="mb-1">
-                        <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/logo.png', [
-                            'alt' => 'Empaques Palma',
-                            'class' => 'img-fluid mb-4',
-                        ])?>
+                        <span class="fs-5 fw-bold">Empaques Palma</span>
                     </div>
                     <div class="mb-1"><i class="fi fi-tr-marker"></i> San Pedro Sula, Honduras</div>
                     <div class="mb-1"><i class="fi fi-tr-at"></i> <?=Html::a('info@empaquespalma.com', 'mailto:info@empaquespalma.com')?></div>
