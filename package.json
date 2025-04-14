@@ -34,6 +34,9 @@
     "install": "scripty",
     "start": "scripty",
     "build": "gulp --gulpfile gulpfile.mjs",
-    "watch": "gulp dev --gulpfile gulpfile.mjs"
+    "watch": "gulp dev --gulpfile gulpfile.mjs",
+    "composer:install": "composer install",
+    "composer:update": "composer update",
+    "composer:remove": "composer remove"
   }
 }
