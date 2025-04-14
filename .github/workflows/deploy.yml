@@ -62,9 +62,9 @@ jobs:
           echo ${{ env.VERSION }} > VERSION &&
           /usr/bin/docker compose build &&
           /usr/bin/docker compose up -d &&
-          /usr/bin/docker compose restart &&
           sleep 10 &&
           /usr/bin/docker compose run --rm php php yii cache/flush-all &&
           rm -rf web/assets/* &&
           rm -f ~/.ssh/gh_key &&
-          /usr/bin/docker compose run --rm php composer install'
+          /usr/bin/docker compose run --rm php composer install &&
+          /usr/bin/docker compose restart'
