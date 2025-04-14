@@ -5,7 +5,7 @@ use yii\helpers\Html;
 <div id="layoutDefault_footer">
     <footer class="footer pt-10 pb-5 mt-auto bg-light footer-light">
         <div class="container px-5">
-            <div class="row gx-5 justify-content-center">
+            <div class="row gx-5 justify-content-center" data-aos="fade-up">
                 <div class="col-lg-3">
                     <div class="footer-brand">
                         <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/tr:e-grayscale/logo.png', [

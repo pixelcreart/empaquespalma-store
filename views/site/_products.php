@@ -5,13 +5,13 @@ use app\widgets\products\ProductItem;
 <section id="products" class="bg-terciary">
     <div class="container py-10">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-up">
                 <div class="display-6 text-center mb-4"><i class="fi fi-tr-marketplace"></i></div>
                 <h1 class="display-6 text-center">Nuestros Productos</h1>
                 <p class="lead">Diseñamos empaques pensados para resaltar la belleza de lo que llevás dentro. Especializados en bolsas de terciopelo para joyería, cada uno de nuestros productos combina calidad, presentación y practicidad, adaptándose a las necesidades de tu marca.</p>
             </div>
         </div>
-        <div class="row py-5">
+        <div class="row py-5" data-aos="fade-up">
             <div class="col-6 col-md-2 mb-3">
                 <?=ProductItem::widget([
                     'product' => [

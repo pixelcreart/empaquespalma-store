@@ -3,7 +3,7 @@ use yii\helpers\Html;
 ?>
 <section id="about" class="bg-terciary py-10">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-5" data-aos="fade-down">
             <div class="col-md-12 text-center">
                 <div class="display-6 text-center mb-4"><i class="fi fi-tr-hands-together"></i></div>
                 <h2 class="display-6">Sobre Nosotros</h2>
@@ -11,27 +11,27 @@ use yii\helpers\Html;
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-right">
                 <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/about.jpg', [
                     'class' => 'img-fluid rounded',
                 ])?>
             </div>
             <div class="col-md-8 mb-4 ps-md-5">
                 <div class="row">
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mb-4" data-aos="fade-down">
                         <h3 class="fs-1">Historia</h3>
                         <p>Nacimos en plena pandemia en San Pedro Sula, Honduras, bajo el nombre original de PaperBags, con la idea de ofrecer bolsas de papel personalizadas. Con el tiempo, encontramos nuestro verdadero propósito en el mundo de la joyería: crear empaques elegantes y funcionales que eleven la presentación de cada pieza.</p>
                         <p>Impulsada por su fundadora, Maciel Palma, la marca evolucionó hasta convertirse en lo que hoy es Empaques Palma: una tienda digital que distribuye y elabora bolsas de terciopelo para joyería, brindando oportunidades y productos de alta calidad a todo el país.</p>
                     </div>
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-4" data-aos="fade-right">
                         <h3 class="fs-1">Misión</h3>
                         <p>Ofrecer soluciones de empaque para joyerías y marcas que buscan destacar, combinando diseño, funcionalidad y calidad desde una plataforma 100% digital.</p>
                     </div>
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-4" data-aos="fade-left">
                         <h3 class="fs-1">Visión</h3>
                         <p>Ser la marca líder en empaques para joyería en Honduras y la región, siendo reconocida por su innovación, accesibilidad y compromiso con el crecimiento de los emprendedores.</p>
                     </div>
-                    <div class="col-md-12 mb-4">
+                    <div class="col-md-12 mb-4" data-aos="fade-up">
                         <h3 class="fs-1">Valores</h3>
                         <p><strong>Calidad:</strong> Nos comprometemos a ofrecer productos que superen las expectativas.</p>
                         <p><strong>Creatividad:</strong> Innovamos constantemente en diseños y materiales.</p>

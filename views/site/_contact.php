@@ -4,7 +4,7 @@ use yii\helpers\Html;
 ?>
 <section id="contact" class="bg-white">
     <div class="container py-10">
-        <div class="row mb-4">
+        <div class="row mb-4" data-aos="fade-up">
             <div class="col-12">
                 <div class="display-6 text-center mb-4"><i class="fi fi-tr-comments"></i></div>
                 <h1 class="display-6 text-center">Contáctanos</h1>
@@ -12,7 +12,7 @@ use yii\helpers\Html;
             </div>
         </div>
         <div class="row mb-4">
-            <div class="col-md-6 pe-md-5">
+            <div class="col-md-6 pe-md-5" data-aos="fade-right">
                 <h5 class="mb-4">Escríbenos</h5>
                 <div class="mb-4">
                     <?=$this->render('_contact-form' ,[
@@ -20,7 +20,7 @@ use yii\helpers\Html;
                     ])?>
                 </div>
             </div>
-            <div class="col-md-6 ps-md-5">
+            <div class="col-md-6 ps-md-5" data-aos="fade-left">
                 <h5 class="mb-4">Contáctenos</h5>
                 <div>
                     <div class="mb-1">
