@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
+use yii\helpers\VarDumper;
 
 /**
  * ContactForm is the model behind the contact form.
@@ -12,9 +13,7 @@ class ContactForm extends Model
 {
     public $name;
     public $email;
-    public $subject;
     public $body;
-    public $verifyCode;
 
 
     /**
@@ -23,12 +22,8 @@ class ContactForm extends Model
     public function rules()
     {
         return [
-            // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body'], 'required'],
-            // email has to be a valid email address
+            [['name', 'email', 'body'], 'required'],
             ['email', 'email'],
-            // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
         ];
     }
 
@@ -38,7 +33,9 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
-            'verifyCode' => 'Verification Code',
+            'name' => 'Nombre',
+            'email' => 'Email',
+            'body' => 'Mensaje',
         ];
     }
 
@@ -47,19 +44,26 @@ class ContactForm extends Model
      * @param string $email the target email address
      * @return bool whether the model passes validation
      */
-    public function contact($email)
+    public function send()
     {
-        if ($this->validate()) {
-            Yii::$app->mailer->compose()
-                ->setTo($email)
-                ->setFrom([Yii::$app->params['senderEmail'] => Yii::$app->params['senderName']])
-                ->setReplyTo([$this->email => $this->name])
-                ->setSubject($this->subject)
-                ->setTextBody($this->body)
-                ->send();
+        $targetEmail = [
+            Yii::$app->params['adminEmail'] => Yii::$app->params['adminName'],
+        ];
 
-            return true;
-        }
-        return false;
+        $senderEmail = [
+            $this->email => $this->name,
+        ];
+
+        $subject = 'Nuevo mensaje de contacto desde el sitio web';
+
+        $mailer = Yii::$app->mailer->compose()
+            ->setTo($targetEmail)
+            ->setFrom($senderEmail)
+            ->setSubject($subject)
+            ->setTextBody($this->body);
+
+        $result = $mailer->send();
+
+        return $result;
     }
 }

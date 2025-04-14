@@ -12,60 +12,30 @@ use app\widgets\products\ProductItem;
             </div>
         </div>
         <div class="row py-5" data-aos="fade-up">
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-6 col-md-4 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
-                        'name' => 'Bolsa Tercipelo',
+                        'name' => 'Bolsa de Tercipelo',
                         'price' => 150,
                         'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
                         'link' => '#',
                     ],
                 ])?>
             </div>
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-6 col-md-4 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
-                        'name' => 'Bolsa Tercipelo',
+                        'name' => 'Bolsa de Pana',
                         'price' => 150,
                         'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
                         'link' => '#',
                     ],
                 ])?>
             </div>
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-6 col-md-4 mb-3">
                 <?=ProductItem::widget([
                     'product' => [
-                        'name' => 'Bolsa Tercipelo',
-                        'price' => 150,
-                        'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
-                        'link' => '#',
-                    ],
-                ])?>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-                <?=ProductItem::widget([
-                    'product' => [
-                        'name' => 'Bolsa Tercipelo',
-                        'price' => 150,
-                        'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
-                        'link' => '#',
-                    ],
-                ])?>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-                <?=ProductItem::widget([
-                    'product' => [
-                        'name' => 'Bolsa Tercipelo',
-                        'price' => 150,
-                        'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
-                        'link' => '#',
-                    ],
-                ])?>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-                <?=ProductItem::widget([
-                    'product' => [
-                        'name' => 'Bolsa Tercipelo',
+                        'name' => 'Bolsa de Microfibra',
                         'price' => 150,
                         'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
                         'link' => '#',

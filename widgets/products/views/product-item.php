@@ -2,6 +2,12 @@
 use yii\helpers\Html;
 
 $formatter = Yii::$app->formatter;
+
+if(!isset($button)) {
+    $button = [
+        'label' => 'Pedir ahora',
+    ];
+}
 ?>
 <div class="card h-100">
     <img src="<?=$product['image']?>" class="card-img-top" alt="<?=$product['name']?>">
@@ -14,8 +20,8 @@ $formatter = Yii::$app->formatter;
     </div>
     <div class="card-footer p-2">
         <div class="d-grid">
-            <?=Html::button('Pedir Ahora', [
-                'class' => 'btn btn-yellow text-dark fw-bold text-uppercase',
+            <?=Html::button($button['label'], [
+                'class' => 'btn btn-secondary fw-bold text-uppercase',
                 'data' => [
                     'bs-toggle' => 'modal',
                     'bs-target' => '#modalOrder',

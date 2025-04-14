@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\components\CloudFlareVerify;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -58,7 +59,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = new ContactForm();
-        
+
         return $this->render('index', [
             'model' => $model,
         ]);
@@ -105,15 +106,37 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
+        if(Yii::$app->request->isPost) {
+            $post = Yii::$app->request->post();
 
-            return $this->refresh();
+            $cfVerified = CloudFlareVerify::verify($post['cf-turnstile-response']);
+
+            if(!$cfVerified) {
+                Yii::$app->session->setFlash('error', 'Verificación fallida. Por favor, inténtalo de nuevo.');
+                
+                return $this->redirect(Yii::$app->request->referrer);
+            }
+
+            $model = new ContactForm();
+            
+            $model->load($post);
+
+            if(!$model->validate()) {
+                Yii::$app->session->setFlash('error', 'Por favor, completa todos los campos requeridos.');
+
+                return $this->redirect(Yii::$app->request->referrer);
+            }
+
+            if($model->send()) {
+                Yii::$app->session->setFlash('success', 'Gracias por contactarnos. Nos pondremos en contacto contigo pronto.');
+            } else {
+                Yii::$app->session->setFlash('error', 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.');
+            }
+
+            return $this->redirect(Yii::$app->request->referrer);
         }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
+
+        return $this->redirect('/');
     }
 
     /**

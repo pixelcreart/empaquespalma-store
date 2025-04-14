@@ -5,6 +5,8 @@
 
 use app\assets\AppAsset;
 use app\widgets\Alert;
+use app\widgets\ModalAlert;
+use app\widgets\Toast;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
@@ -54,6 +56,8 @@ $this->registerMetaTag(['name' => 'twitter:image', 'content' => $params['seo']['
     </div>
     <?= $this->render('_footer') ?>
 </div>
+
+<?=ModalAlert::widget()?>
 <?php $this->endBody() ?>
 </body>
 </html>

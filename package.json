@@ -37,6 +37,7 @@
     "watch": "gulp dev --gulpfile gulpfile.mjs",
     "composer:install": "composer install",
     "composer:update": "composer update",
-    "composer:remove": "composer remove"
+    "composer:remove": "composer remove",
+    "composer:require": "composer require"
   }
 }

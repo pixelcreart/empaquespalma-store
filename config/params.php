@@ -2,9 +2,9 @@
 
 return [
     'adminEmail' => 'admin@empaquespalma.com',
+    'adminName' => 'Empaques Palma',
     'senderEmail' => 'hello@empaquespalma.com',
     'senderName' => 'Website Empaques Palma',
-    'senderSubject' => 'Nuevo mensaje de contacto',
     'whatsAppPhone' => '50431906463',
     'seo' => [
         'title' => 'Empaques Palma | Bolsas de terciopelo para joyería en Honduras',
@@ -14,7 +14,7 @@ return [
         'robots' => 'index, follow',
         'opengraph' => [
             'title' => 'Empaques Palma | Bolsas elegantes para joyería',
-            'description' => 'Tienda online hondureña especializada en empaques para joyería. Bolsas de terciopelo con estilo y calidad. Envíos a todo el país.',
+            'description' => 'Tienda online especializada en empaques para joyería. Bolsas de terciopelo con estilo y calidad. Envíos a todo el país.',
             'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-1200,h-630/jumbotron.png',
             'url' => 'https://empaquespalma.com',
             'type' => 'website',
@@ -23,7 +23,7 @@ return [
         'twitter' => [
             'card' => 'summary_large_image',
             'title' => 'Empaques Palma | Bolsas elegantes para joyería',
-            'description' => 'Tienda online hondureña especializada en empaques para joyería. Bolsas de terciopelo con estilo y calidad. Envíos a todo el país.',
+            'description' => 'Tienda online especializada en empaques para joyería. Bolsas de terciopelo con estilo y calidad. Envíos a todo el país.',
             'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-1200,h-630/jumbotron.png',
         ],
         'business' => [
@@ -42,5 +42,9 @@ return [
             'priceRange' => '$',
             'openingHours' => ['Mo-Sa 06:00-21:00','Su 07:00-15:00'],
         ],
+    ],
+    'cloudflare' => [
+        'siteKey' => '0x4AAAAAABLhcb8mu6PQQPfF',
+        'secretKey' => '0x4AAAAAABLhceO0clm3Tny-hBjWIOZRpz4',
     ],
 ];

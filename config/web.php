@@ -32,8 +32,15 @@ $config = [
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
             'viewPath' => '@app/mail',
-            // send all mails to a file by default.
-            'useFileTransport' => true,
+            'transport' => [
+                'scheme' => 'smtps',
+                'host' => '',
+                'username' => '',
+                'password' => '',
+                'port' => 465,
+                'dsn' => 'native://default',
+            ],
+            'useFileTransport' => false,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -45,14 +52,10 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
         ],
-        */
     ],
     'params' => $params,
 ];
