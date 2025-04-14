@@ -15,7 +15,9 @@ use yii\helpers\Html;
             <div class="col-md-6 pe-md-5">
                 <h5 class="mb-4">Escríbenos</h5>
                 <div class="mb-4">
-                    
+                    <?=$this->render('_contact-form' ,[
+                        'model' => $model,
+                    ])?>
                 </div>
             </div>
             <div class="col-md-6 ps-md-5">
