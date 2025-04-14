@@ -8,16 +8,12 @@ use yii\helpers\Html;
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6" data-aos="fade-up">
                     <h1 class="page-header-ui-title">Empaques que realzan tu marca</h1>
-                    <p class="page-header-ui-text mb-5">Bolsas de terciopelo premium para joyerías y regalos especiales</p>
+                    <p class="fs-4 fw-lighter text-white mb-5">Bolsas de terciopelo premium para joyerías y regalos especiales</p>
                     <?=Html::a('Nuestro Catalogo', '#products', [
                         'class' => 'btn btn-secondary fw-500 me-2',
                     ])?>
                     <?=Html::a('Contactenos', '#contact', [
                         'class' => 'btn btn-link fw-500',
-                        'data' => [
-                            'bs-toggle' => 'modal',
-                            'bs-target' => '#contactModal',
-                        ],
                     ])?>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100">
