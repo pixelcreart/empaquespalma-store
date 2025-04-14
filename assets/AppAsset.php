@@ -28,7 +28,14 @@ class AppAsset extends AssetBundle
         'css/styles.min.css',
     ];
     public $js = [
-        'https://unpkg.com/aos@2.3.1/dist/aos.js',
+        [
+            'src' => 'https://unpkg.com/feather-icons',
+            'position' => \yii\web\View::POS_HEAD,
+        ],
+        [
+            'src' => 'https://unpkg.com/aos@2.3.1/dist/aos.js',
+            'position' => \yii\web\View::POS_HEAD,
+        ],
         YII_ENV_PROD ? 'js/main.min.js' : 'js/main.js',
     ];
     public $depends = [
