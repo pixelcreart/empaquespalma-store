@@ -30,7 +30,8 @@ $config = [
             'errorAction' => 'site/error',
         ],
         'mailer' => [
-            'class' => \yii\symfonymailer\Mailer::class,
+            'class' => 'pixelcreart\sendgrid\Mailer',
+            'token' => '',
             'viewPath' => '@app/mail',
             'transport' => [
                 'scheme' => 'smtps',
