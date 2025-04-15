@@ -47,4 +47,7 @@ return [
         'siteKey' => '0x4AAAAAABLhcb8mu6PQQPfF',
         'secretKey' => '0x4AAAAAABLhceO0clm3Tny-hBjWIOZRpz4',
     ],
+    'sendgrid' => [
+        'apikey' => '',
+    ]
 ];
