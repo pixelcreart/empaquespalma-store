@@ -1,6 +1,8 @@
 <?php
-
 use app\widgets\products\ProductItem;
+use yii\helpers\VarDumper;
+
+$products = json_decode(file_get_contents('../lib/products.json'));
 ?>
 <section id="products" class="bg-terciary">
     <div class="container py-10">
@@ -12,36 +14,32 @@ use app\widgets\products\ProductItem;
             </div>
         </div>
         <div class="row py-5" data-aos="fade-up">
-            <div class="col-6 col-md-4 mb-3">
-                <?=ProductItem::widget([
-                    'product' => [
-                        'name' => 'Bolsa de Tercipelo',
-                        'price' => 150,
-                        'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
-                        'link' => '#',
-                    ],
-                ])?>
-            </div>
-            <div class="col-6 col-md-4 mb-3">
-                <?=ProductItem::widget([
-                    'product' => [
-                        'name' => 'Bolsa de Pana',
-                        'price' => 150,
-                        'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
-                        'link' => '#',
-                    ],
-                ])?>
-            </div>
-            <div class="col-6 col-md-4 mb-3">
-                <?=ProductItem::widget([
-                    'product' => [
-                        'name' => 'Bolsa de Microfibra',
-                        'price' => 150,
-                        'image' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-400,h-400/hero-velvet-bag-1.png',
-                        'link' => '#',
-                    ],
-                ])?>
-            </div>
+            <?php foreach($products as $product) : ?>
+                <div class="col-6 col-md-3 mb-3">
+                    <?=ProductItem::widget([
+                        'product' => [
+                            'name' => $product->name,
+                            'description' => $product->description,
+                            'colors' => $product->colors,
+                            'sizes' => $product->sizes,
+                            'size_unit' => $product->size_unit,
+                            'image' => $product->images[0],
+                            'special' => isset($product->special) ? $product->special : null,
+                            'action' => [
+                                'type' => 'button',
+                                'label' => 'Cotizar',
+                                'options' => [
+                                    'data' => [
+                                        'bs-toggle' => 'modal',
+                                        'bs-target' => '#modal-whatsapp',
+                                        'bs-product-name' => $product->name,
+                                    ]
+                                ],
+                            ],
+                        ],
+                    ])?>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
     <div class="svg-border-rounded text-white">

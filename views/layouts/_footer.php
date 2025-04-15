@@ -23,6 +23,11 @@ use yii\helpers\Html;
                     <a href="#!">Terms &amp; Conditions</a>
                 </div>
             </div>
+            <div class="row gx-5 my-3">
+                <div class="col-12 text-center">
+                    
+                </div>
+            </div>
         </div>
     </footer>
 </div>

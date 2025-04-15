@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Pana Bag Classic",
+      "description": "Bolsa de pana con textura acanalada, ideal para presentar joyería con estilo clásico y cálido.",
+      "colors": ["black"],
+      "sizes": ["8x8"],
+      "size_unit": "cm",
+      "images": [
+        "https://ik.imagekit.io/ready/corpalma/img/site/pana.png"
+      ]
+    },
+    {
+      "name": "Velvet Lux Bag",
+      "description": "Bolsa de terciopelo suave, perfecta para joyería elegante y presentaciones sofisticadas.",
+      "colors": ["red", "black", "navy"],
+      "sizes": ["7x9"],
+      "size_unit": "cm",
+      "images": [
+        "https://ik.imagekit.io/ready/corpalma/img/site/terciopelo.png"
+      ]
+    },
+    {
+      "name": "Natural Manta Bag",
+      "description": "Bolsa de manta natural, ideal para joyería artesanal o con enfoque ecológico.",
+      "colors": ["#e4cdb5"],
+      "sizes": ["10x14"],
+      "size_unit": "cm",
+      "special": "Por temporada",
+      "images": [
+        "https://ik.imagekit.io/ready/corpalma/img/site/manta.png"
+      ]
+    },
+    {
+      "name": "MicroCare Bag",
+      "description": "Bolsa de microfibra suave y liviana, ideal para proteger joyería delicada.",
+      "colors": ["gray", "black", "white"],
+      "sizes": ["9x12"],
+      "size_unit": "cm",
+      "images": [
+        "https://ik.imagekit.io/ready/corpalma/img/site/microfibra.png"
+      ]
+    }
+  ]

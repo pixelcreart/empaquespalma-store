@@ -6,18 +6,14 @@ use yii\helpers\Html;
 ?>
 <?php $form = ActiveForm::begin([
     'id' => 'order-form',
-    'action' => ['order/send'],
+    'action' => ['contact/message'],
     'options' => [
         'target' => '_blank',
     ]
 ]); ?>
-<div class="modal fade" id="modalOrder" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="modal-whatsapp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Antes de Pedir!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
             <div class="modal-body">
                 <?=$form->field($model, 'name')->textInput([
                     'maxlength' => true,

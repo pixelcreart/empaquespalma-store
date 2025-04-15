@@ -35,8 +35,10 @@ use yii\helpers\Html;
             </ul>
             <?=Html::button('Escribenos', [
                 'class' => 'btn btn-secondary fw-500 ms-lg-4',
-                'data-bs-toggle' => 'modal',
-                'data-bs-target' => '#contactModal',
+                'data' => [
+                    'bs-toggle' => 'modal',
+                    'bs-target' => '#modal-whatsapp',
+                ],
             ])?>
         </div>
     </div>

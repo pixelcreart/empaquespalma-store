@@ -4,13 +4,9 @@
 /** @var string $content */
 
 use app\assets\AppAsset;
-use app\widgets\Alert;
 use app\widgets\ModalAlert;
-use app\widgets\Toast;
-use yii\bootstrap5\Breadcrumbs;
+use app\widgets\whatsapp\WhatsAppModal;
 use yii\bootstrap5\Html;
-use yii\bootstrap5\Nav;
-use yii\bootstrap5\NavBar;
 
 AppAsset::register($this);
 
@@ -57,6 +53,7 @@ $this->registerMetaTag(['name' => 'twitter:image', 'content' => $params['seo']['
     <?= $this->render('_footer') ?>
 </div>
 
+<?=WhatsAppModal::widget()?>
 <?=ModalAlert::widget()?>
 <?php $this->endBody() ?>
 </body>

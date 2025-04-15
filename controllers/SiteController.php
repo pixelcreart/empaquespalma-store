@@ -10,6 +10,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\widgets\whatsapp\models\WhatsAppModel;
 
 class SiteController extends Controller
 {
@@ -134,6 +135,22 @@ class SiteController extends Controller
             }
 
             return $this->redirect(Yii::$app->request->referrer);
+        }
+
+        return $this->redirect('/');
+    }
+
+    /**
+     * Message
+     */
+    public function actionMessage()
+    {
+        $post = Yii::$app->request->post();
+
+        if($post) {
+            $model = new WhatsAppModel();
+
+            
         }
 
         return $this->redirect('/');

@@ -36,3 +36,20 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: $primary;
 }
+
+.color-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.product-card {
+    position: relative;
+
+    .special-badge {
+        top: 20px;
+        right: -5px;
+    }
+}

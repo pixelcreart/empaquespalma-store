@@ -1,5 +1,5 @@
 <?php
-namespace app\widgets\order;
+namespace app\widgets\whatsapp;
 
 use app\widgets\whatsapp\models\WhatsAppModel;
 use yii\base\Widget;
