@@ -33,14 +33,6 @@ $config = [
             'class' => 'pixelcreart\sendgrid\Mailer',
             'token' => '',
             'viewPath' => '@app/mail',
-            'transport' => [
-                'scheme' => 'smtps',
-                'host' => '',
-                'username' => '',
-                'password' => '',
-                'port' => 465,
-                'dsn' => 'native://default',
-            ],
             'useFileTransport' => false,
         ],
         'log' => [
