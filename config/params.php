@@ -48,6 +48,6 @@ return [
         'secretKey' => '0x4AAAAAABLhceO0clm3Tny-hBjWIOZRpz4',
     ],
     'sendgrid' => [
-        'apikey' => '',
+        'apikey' => $_ENV['SENDGRID_APIKEY'],
     ]
 ];

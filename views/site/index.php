@@ -14,6 +14,8 @@ $this->title = 'Empaques Palma - Empaques de lujo para joyerías';
 
 <?=$this->render('_about') ?>
 
+<?=$this->render('_feed-instagram') ?>
+
 <?=$this->render('_contact', [
     'model' => $model,
 ]) ?>
