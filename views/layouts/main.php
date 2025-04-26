@@ -46,7 +46,6 @@ $this->registerMetaTag(['name' => 'twitter:image', 'content' => $params['seo']['
     <div id="layoutDefault_content">
         <main>
             <?=$this->render('_navbar')?>
-            <?=$this->render('_topbar') ?>
             <?=$content?>
         </main>
     </div>
