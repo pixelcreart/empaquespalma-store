@@ -58,6 +58,8 @@ jobs:
           eval `ssh-agent -s` &&
           ssh-add ~/.ssh/gh_key &&
           cd ${{ env.PROD_REMOTE_PATH }} &&
+          rm -f .env &&
+          echo "SENDGRID_APIKEY=${{secrets.SENDGRID_APIKEY}}" >> .env &&
           git fetch --tags && git checkout ${{ github.ref }} &&
           echo ${{ env.VERSION }} > VERSION &&
           /usr/bin/docker compose build &&
