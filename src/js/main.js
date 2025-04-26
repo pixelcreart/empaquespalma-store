@@ -22,12 +22,10 @@ $(function() {
 
 
     setTimeout(() => {
-        const elfsight = 'elfsight-app-ec3e8069-396f-4293-9865-f2266583112f';
-        $(document).find(`.${elfsight} a:last`).remove();
+        $(document).find(`.eapps-instagram-feed a:last`).remove();
 
-        $(document).find(`.${elfsight} .eapps-instagram-feed-posts-grid-load-more-container`).remove();
+        $(document).find(`.eapps-instagram-feed .eapps-instagram-feed-posts-grid-load-more-container`).remove();
 
-        $(`.${elfsight}`).find('.eapps-instagram-feed-title').text('Siguenos en Instagram');
-        
-    }, 1000)
+        $(`.eapps-instagram-feed`).find('.eapps-instagram-feed-title').text('Siguenos en Instagram');
+    }, 1100)
 })
