@@ -2,10 +2,11 @@
 
 use yii\bootstrap5\ActiveForm;
 use yii\helpers\Html;
+use yii\widgets\MaskedInput;
 
 ?>
 <?php $form = ActiveForm::begin([
-    'id' => 'order-form',
+    'id' => 'whatsapp-form',
     'action' => ['contact/message'],
     'options' => [
         'target' => '_blank',
@@ -15,17 +16,23 @@ use yii\helpers\Html;
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
+                <div class="my-5 text-center">
+                    <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/tr:w-90/logo-sm-ep.png')?>
+                </div>
                 <?=$form->field($model, 'name')->textInput([
                     'maxlength' => true,
                     'placeholder' => 'Nombre Completo',
                 ])->label(false)?>
                 <?=$form->field($model, 'email')->textInput([
+                    'type' => 'email',
                     'maxlength' => true,
                     'placeholder' => 'Correo Electrónico',
                 ])->label(false)?>
-                <?=$form->field($model, 'phone')->textInput([
-                    'maxlength' => true,
-                    'placeholder' => 'Teléfono',
+                <?=$form->field($model, 'phone')->widget(MaskedInput::class, [
+                    'mask' => '9999-9999',
+                    'options' => [
+                        'placeholder' => 'Telefono',
+                    ],
                 ])->label(false)?>
                 <?=$form->field($model, 'address')->textInput([
                     'maxlength' => true,

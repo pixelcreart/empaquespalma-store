@@ -43,7 +43,9 @@ class WhatsAppModel extends Model {
         $message .= "*Nombre:* {$this->name}\n";
         $message .= "*Correo Electrónico:* {$this->email}\n";
         $message .= "*Teléfono:* {$this->phone}\n";
-        $message .= "*Dirección:* {$this->address}\n";
+
+        if(!empty($this->address))
+            $message .= "*Dirección:* {$this->address}\n";
 
         return "https://wa.me/{$this->whatsAppPhone}/?text=" . urlencode($message);
     }
