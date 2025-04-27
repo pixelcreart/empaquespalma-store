@@ -5,7 +5,7 @@
 
 use app\assets\AppAsset;
 use app\widgets\ModalAlert;
-use app\widgets\whatsapp\WhatsAppModal;
+use diincompany\commerce\widgets\whatsapp\WhatsAppModal;
 use yii\bootstrap5\Html;
 
 AppAsset::register($this);

@@ -2,7 +2,6 @@
 namespace app\widgets;
 
 use Yii;
-use yii\helpers\VarDumper;
 
 class ModalAlert extends \yii\base\Widget
 {
