@@ -1,6 +1,5 @@
 <?php
-use app\widgets\products\ProductItem;
-use yii\helpers\VarDumper;
+use diincompany\commerce\widgets\products\ProductItem;
 
 $products = json_decode(file_get_contents('../lib/products.json'));
 ?>
