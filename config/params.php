@@ -49,5 +49,8 @@ return [
     ],
     'sendgrid' => [
         'apikey' => $_ENV['SENDGRID_APIKEY'],
-    ]
+    ],
+    'googleAnalytics' => [
+        'key' => 'G-PHZJ74G2Z5',
+    ],
 ];

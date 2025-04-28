@@ -37,6 +37,15 @@ $this->registerMetaTag(['name' => 'twitter:image', 'content' => $params['seo']['
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?=$params['googleAnalytics']['key']?>"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '<?=$params['googleAnalytics']['key']?>');
+    </script>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
