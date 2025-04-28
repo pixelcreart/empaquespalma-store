@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a329317a94bc0dd6961942a829d2233",
+    "content-hash": "bcaa9e4adbcdb6eecfeac6e0ce9142aa",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
-            "version": "v5.3.5",
+            "version": "v5.3.0-alpha1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "85f23534bd2de8041354b297516cf21959091b31"
+                "url": "git@github.com:twbs/bootstrap.git",
+                "reference": "cf9454caa00872899215603e5e036d9a824b1b11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/85f23534bd2de8041354b297516cf21959091b31",
-                "reference": "85f23534bd2de8041354b297516cf21959091b31"
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/cf9454caa00872899215603e5e036d9a824b1b11",
+                "reference": "cf9454caa00872899215603e5e036d9a824b1b11"
             },
             "type": "bower-asset"
         },
@@ -164,15 +164,22 @@
         {
             "name": "diincompany/yii2-diin-commerce",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/diincompany/yii2-diin-commerce.git",
+                "reference": "ca4cdfb82b128027ab52c195fdad38d71c10abfe"
+            },
             "dist": {
-                "type": "path",
-                "url": "extensions/yii2-diin-commerce",
-                "reference": "ed283924f6463324a4018fd0c87ba0893a28c576"
+                "type": "zip",
+                "url": "https://api.github.com/repos/diincompany/yii2-diin-commerce/zipball/ca4cdfb82b128027ab52c195fdad38d71c10abfe",
+                "reference": "ca4cdfb82b128027ab52c195fdad38d71c10abfe",
+                "shasum": ""
             },
             "require": {
                 "php": ">=8.1.0",
                 "yiisoft/yii2": "~2.0.0"
             },
+            "default-branch": true,
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
@@ -195,10 +202,11 @@
                 "payment",
                 "widget"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/diincompany/yii2-diin-commerce/tree/main",
+                "issues": "https://github.com/diincompany/yii2-diin-commerce/issues"
+            },
+            "time": "2025-04-27T21:54:08+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -2250,12 +2258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "c840074c69cd45ccac4f49c67c9ed8be0ed335a5"
+                "reference": "11de6125ceb3c4cd221ec3e6d4bf65b75173d93e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/c840074c69cd45ccac4f49c67c9ed8be0ed335a5",
-                "reference": "c840074c69cd45ccac4f49c67c9ed8be0ed335a5",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/11de6125ceb3c4cd221ec3e6d4bf65b75173d93e",
+                "reference": "11de6125ceb3c4cd221ec3e6d4bf65b75173d93e",
                 "shasum": ""
             },
             "require": {
@@ -2364,7 +2372,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-04-25T04:36:59+00:00"
+            "time": "2025-04-28T05:55:09+00:00"
         },
         {
             "name": "codeception/lib-asserts",
@@ -3346,12 +3354,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "8a68c674cf515e9381a61e87e2b106419650bd7d"
+                "reference": "b932c06badff9a7791904e0237daf47082200f33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/8a68c674cf515e9381a61e87e2b106419650bd7d",
-                "reference": "8a68c674cf515e9381a61e87e2b106419650bd7d",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/b932c06badff9a7791904e0237daf47082200f33",
+                "reference": "b932c06badff9a7791904e0237daf47082200f33",
                 "shasum": ""
             },
             "require": {
@@ -3369,7 +3377,7 @@
                 "theseer/tokenizer": "^1.2.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^12.0"
+                "phpunit/phpunit": "^12.1"
             },
             "suggest": {
                 "ext-pcov": "PHP extension that provides line coverage",
@@ -3379,7 +3387,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "12.1.x-dev"
+                    "dev-main": "12.2.x-dev"
                 }
             },
             "autoload": {
@@ -3428,7 +3436,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-26T15:59:56+00:00"
+            "time": "2025-04-28T06:15:28+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
