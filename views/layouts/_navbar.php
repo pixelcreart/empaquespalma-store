@@ -5,7 +5,7 @@ use yii\helpers\Html;
 ?>
 <nav class="navbar navbar-marketing navbar-expand-lg bg-primary navbar-dark">
     <div class="container px-5">
-        <a class="navbar-brand text-white" href="index.html">
+        <a class="navbar-brand text-white" href="/">
             <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/logo-mini-light.png', [
                 'class' => 'navbar-brand-img',
                 'alt' => 'Empaques Palma',

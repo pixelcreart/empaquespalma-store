@@ -14,6 +14,7 @@ use yii\helpers\Html;
             <div class="col-md-4 mb-4" data-aos="fade-right">
                 <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/about.jpg', [
                     'class' => 'img-fluid rounded',
+                    'alt' => 'Empaques Palma',
                 ])?>
             </div>
             <div class="col-md-8 mb-4 ps-md-5">

@@ -10,6 +10,7 @@ use yii\helpers\Html;
                     <div class="footer-brand">
                         <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/tr:e-grayscale/logo.png', [
                             'class' => 'img-fluid mb-4',
+                            'alt' => 'Empaques Palma',
                         ])?>
                     </div>
                 </div>

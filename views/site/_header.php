@@ -21,6 +21,7 @@ use yii\helpers\Html;
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/hero-1.png', [
                         'class' => 'img-fluid',
+                        'alt' => 'Empaques Palma',
                     ])?>
                 </div>
             </div>
