@@ -74,8 +74,11 @@
             "url": "https://asset-packagist.org"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/diincompany/yii2-diin-commerce"
+            "type": "path",
+            "url": "extensions/yii2-diin-commerce",
+            "options": {
+                "symlink": true
+            }
         }
     ]
 }

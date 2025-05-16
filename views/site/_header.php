@@ -1,5 +1,4 @@
 <?php
-
 use yii\helpers\Html;
 ?>
 <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-75" style="background-image: url('https://ik.imagekit.io/ready/corpalma/img/site/jumbotron.png');">
@@ -21,7 +20,7 @@ use yii\helpers\Html;
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <?=Html::img('https://ik.imagekit.io/ready/corpalma/img/site/hero-1.png', [
                         'class' => 'img-fluid',
-                        'alt' => 'Empaques Palma',
+                        'alt' => 'Dos bolsas de tela, una en color nude y otra en color rosa, ambas con un cierre dorado y el texto "Bella\'s Perlas" estampado en dorado.',
                     ])?>
                 </div>
             </div>

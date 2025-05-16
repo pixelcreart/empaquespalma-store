@@ -61,7 +61,9 @@ $this->registerMetaTag(['name' => 'twitter:image', 'content' => $params['seo']['
     <?= $this->render('_footer') ?>
 </div>
 
-<?=WhatsAppModal::widget()?>
+<?=WhatsAppModal::widget([
+    'modalImg' => 'https://ik.imagekit.io/ready/corpalma/img/site/tr:w-90/logo-sm-ep.png',
+])?>
 <?=ModalAlert::widget()?>
 <?php $this->endBody() ?>
 </body>

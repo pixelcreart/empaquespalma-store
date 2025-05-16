@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcaa9e4adbcdb6eecfeac6e0ce9142aa",
+    "content-hash": "1a329317a94bc0dd6961942a829d2233",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -164,22 +164,15 @@
         {
             "name": "diincompany/yii2-diin-commerce",
             "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/diincompany/yii2-diin-commerce.git",
-                "reference": "ca4cdfb82b128027ab52c195fdad38d71c10abfe"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/diincompany/yii2-diin-commerce/zipball/ca4cdfb82b128027ab52c195fdad38d71c10abfe",
-                "reference": "ca4cdfb82b128027ab52c195fdad38d71c10abfe",
-                "shasum": ""
+                "type": "path",
+                "url": "extensions/yii2-diin-commerce",
+                "reference": "ca4cdfb82b128027ab52c195fdad38d71c10abfe"
             },
             "require": {
                 "php": ">=8.1.0",
                 "yiisoft/yii2": "~2.0.0"
             },
-            "default-branch": true,
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
@@ -202,11 +195,10 @@
                 "payment",
                 "widget"
             ],
-            "support": {
-                "source": "https://github.com/diincompany/yii2-diin-commerce/tree/main",
-                "issues": "https://github.com/diincompany/yii2-diin-commerce/issues"
-            },
-            "time": "2025-04-27T21:54:08+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "doctrine/lexer",
