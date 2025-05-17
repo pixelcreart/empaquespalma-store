@@ -1,7 +1,7 @@
 <?php
 namespace app\controllers;
 
-use app\widgets\whatsapp\models\WhatsAppModel;
+use diincompany\commerce\widgets\whatsapp\models\WhatsAppModel;
 use Yii;
 use yii\web\Controller;
 
